@@ -43,7 +43,7 @@
     <rect x="60" y="150" width="960" height="1300" rx="44" fill="#0d1117" stroke="#1c2128" stroke-width="2"/>
     <circle class="dot" style="--d:0.4s" cx="132" cy="238" r="9" fill="#4ade80"/>
     <text x="158" y="252" font-size="40" font-weight="700" fill="#e6edf3">icudecodedd.com</text>
-    <text x="130" y="312" font-size="29" font-weight="600" fill="#7d8590" letter-spacing="5">READERS &#183; LAST 7 DAYS</text>
+    <text x="130" y="312" font-size="29" font-weight="600" fill="#7d8590" letter-spacing="5">PAGEVIEWS &#183; LAST 7 DAYS</text>
     <line x1="130" y1="356" x2="950" y2="356" stroke="#21262d" stroke-width="2"/>
     <text class="cue" style="--d:0.55s" x="540" y="560" font-size="120" font-weight="800" fill="#21262d" text-anchor="middle">&#8212;&#8212;&#8212;</text>
     <g fill="#4ade80">

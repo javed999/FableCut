@@ -1,260 +1,162 @@
-# ICU Decoded — "Last Bench" reel
+# ICU Decoded — "Last Bench" reel, re-cut from source
 
-**28.0s · 1080×1920 · 30fps · Hinglish VO / English on-screen text · hard loop**
+**33.7s · 1080×1920 · 30fps · his original voice · English captions · loop-tagged**
 
-The timeline is built. `project.json` is gitignored (it's runtime user data), so the
-cut is versioned here as **`reels/icu-last-bench.project.json`**. To load it:
+This is a **re-cut of the reel he already shot** (`IMG_5833.MP4`, 1440×2560 HEVC,
+33.7s), not a build from the written script. The source was pulled from a GitHub
+release asset — Google Drive is blocked by this workspace's egress policy
+(`drive.google.com` → 403 at the proxy gateway).
+
+Everything spoken is his own recording, untouched. What changed is what you see.
+
+---
+
+## What the source actually had
+
+Measured, not guessed — shot detection, silence detection, and caption-band
+change detection over the real file.
+
+### 1. 12.3 seconds — 37% of the reel — was a phone-shot of a monitor
+
+Shot boundaries came back as `1.7, 2.8, 3.93, 7.87, 10.17, 11.83, 24.13, 24.33,
+25.37, 29.83, 30.1`. The gap from **11.83 → 24.13** is a single unbroken take: a
+handheld recording of a computer screen, tilted, glare-lit, with a pen pointing
+at rows of 20px text.
+
+That stretch carries the entire proof of the story, and on a phone it is
+illegible. It is now **replaced** by a purpose-built panel where every row lands
+on the exact frame he names that country.
+
+### 2. The numbers on screen did not match the numbers in his voice
+
+Read directly off the dashboard in the footage (`Location / Pageviews`, dated
+25-08-2026):
+
+| | script said | actually on screen |
+| --- | --- | --- |
+| United States | 954 | **955** |
+| India | 864 | **872** |
+| France | 148 | **149** |
+| Norway | 114 | 114 |
+| China | 49 | 49 |
+| Singapore | 48 | 48 |
+| Brazil | 40 | 40 |
+| **Total** | 2,217 | **2,227** |
+
+The metric is **Pageviews**, not "readers". Every panel now uses the real
+figures and the real label — a receipt that contradicts its own voiceover is
+worse than no receipt.
+
+### 3. The burned-in captions were auto-generated, and wrong
+
+`India eight seventy-two` · `On 149 something.` · `Where u sat` ·
+`It ask what you build`. They also sat at **y ≈ 1854 of 2560** — low enough to
+collide with Instagram's own UI overlay.
+
+Removed entirely by cropping the frame above them (below), and rewritten.
+
+### 4. The first 2.8s was black with a slow typewriter
+
+Two full seconds of near-black before anything happens, with the line typing in
+one character at a time. To a muted scroll that is an empty frame.
+
+### 5. Two takes ran long and static
+
+`3.93 → 10.17` (6.2s) and `25.37 → 33.7` (8.3s) are single locked-off shots with
+no cut. Both now carry a punch-in.
+
+---
+
+## What the re-cut does
+
+### Picture
+- **Cropped `990×1760` at x=225, y=0**, then scaled to 1080×1920. This removes the
+  old captions completely — no blur patch, no cover-up — *and* tightens the
+  framing, which was loose. His head keeps its headroom.
+- **Punch-in cuts** at 7.87s (on "ICU notes") and 30.15s (on the closing line):
+  same footage, `scale` 1.12–1.13, cut on the beat.
+- **Grade carries the arc**: classroom `faded` / saturation 58 / temperature −22;
+  talking head `cinematic` with a slight cool push; the 3 AM section opens at
+  brightness 40 and lifts to 88 over 0.4s so the frame *dips* as the line starts.
+
+### The analytics section
+- His monitor footage stays underneath at **30% opacity, blur 22** — so it still
+  reads as *that* screen — with the legible panel on top.
+- Rows land on his voice, timed from his own captions:
+  `US 11.93 · India 13.77 · France 15.60 · China 18.63 · Singapore 21.13 · Brazil 21.93`
+- The running total re-totals on each: `0 → 955 → 1,827 → 1,976 → 2,090 → 2,139 → 2,187 → 2,227`
+- **Norway is never named in his list.** Its row lands silently in sequence, then
+  **lights up gold at 23.4s**, one second before his flag shot — turning an
+  unexplained gap into the pivot.
+
+### Added
+- **Cold open on the payoff** (0–1.7s): the settled panel, 2,227, seven countries,
+  with `Nobody read a word I wrote.` across the bottom. The contradiction between
+  the text and the numbers is the hook, and it is readable with sound off.
+- **Screen wake** at 11.1s: bloom, scanline sweep, seven empty rows about to fill,
+  with shake + RGB split. His "then I opened my analytics" now has a visual.
+- **Comment trigger** at 21.35s: `Which one are you? 👇`, while the viewer is
+  looking at seven countries.
+- **Loop bridge** at 33.3s: the panel rises back under the closing line.
+
+### Audio
+His original AAC, stream-copied — not re-encoded, not re-timed, not levelled.
+
+---
+
+## The cut
+
+| Time | Picture | Caption |
+| --- | --- | --- |
+| 0.00–1.70 | **cold-open panel · 2,227** | Nobody read a word I wrote. |
+| 1.70–2.80 | black | I was the last-bench guy. |
+| 2.80–3.93 | classroom, drained | Nobody asked my opinion. |
+| 3.93–7.87 | talking head | So I stopped talking. → So I started writing instead. |
+| 7.87–10.17 | **punch in** | ICU notes. ABG. Protocols. *(cyan)* |
+| 10.17–11.83 | talking head, slow push | Then I opened my analytics. |
+| 11.10–11.93 | **screen wake** · shake + RGB split | — |
+| 11.93–24.33 | **REVEAL** · one row per spoken country | *the panel is the caption* |
+| 21.35–23.65 | ↑ over the full list | **Which one are you? 👇** |
+| 23.40 | Norway row lights gold | — |
+| 24.33–25.37 | his Norway flag shot, whip in | Norway. |
+| 25.37–30.15 | dips to near-black, lifts | A nurse in Norway → opened my page at 3 AM. |
+| 30.15–33.70 | **punch in** | The world doesn't ask → where you sat. → **It asks what you built.** |
+| 33.30–33.70 | panel rises behind | — |
+
+---
+
+## Two things to check before posting
+
+1. **"A nurse in Norway."** His auto-caption at that point reads only
+   `Open my page at 3 AM in the morning` — the word *nurse* is not in it, and the
+   audio could not be verified here. It **is** in the script he wrote, so the
+   caption uses it. If he did not actually say it, change that one caption.
+
+2. **The zero screen is not in this cut.** The "for weeks, nobody read it" beat —
+   the `0` panel with WEEK 1→6 ticking under a number that never moves — is the
+   single strongest retention device in the plan, and it sits exactly where
+   Instagram measures first drop-off. **He did not record that line**, so there is
+   no audio to hang it on. `library/svg/icu-zero-readers.svg` is built and waiting;
+   one sentence of voiceover brings it back.
+
+---
+
+## Files
+
+| File | |
+| --- | --- |
+| `reels/icu-last-bench.mp4` | the re-cut, with his audio |
+| `reels/icu-last-bench.project.json` | the timeline — 27 clips, 20 markers |
+| `library/svg/icu-analytics-cold.svg` | settled panel — cold open + loop |
+| `library/svg/icu-analytics-reveal.svg` | the 12.4s reveal, timed to his voice |
+| `library/svg/icu-screen-wake.svg` | the 11.1s screen wake |
+| `library/svg/icu-zero-readers.svg` | the retention hold — unused, needs one line of VO |
+
+`project.json` and `media/` are gitignored (runtime user data), so the timeline
+ships as a template. To reopen the edit:
 
 ```
 cp reels/icu-last-bench.project.json project.json
+# put talk.mp4 + vo.m4a back in media/ (both derive from the source video)
 node server.js          # → http://localhost:7777
 ```
-
-Then drop the files listed under **What to record** into `media/` and it plays.
-
-> **The reference video was not analysed.** The Google Drive link is blocked by
-> this workspace's egress policy (`drive.google.com` → 403 at the proxy), so the
-> cut below is built from the script alone, not from the footage. Every timing is
-> a starting grid — nudge clip edges to the VO once your real recording is in.
-
----
-
-## If you don't want to touch code
-
-A rendered video ships with this cut: **`reels/icu-last-bench.mp4`** — 1080x1920,
-28.0s, every caption and all four analytics screens burned in, exactly as the timeline
-plays them. It has **no sound**, and no footage behind the text (there was none to use).
-
-That is deliberate, and it is the whole non-coder path:
-
-1. Open the MP4 in **CapCut** (or Instagram's own reel editor). Drop it on the timeline.
-2. **Record the Hinglish VO straight onto it.** You do not need the script in front of
-   you — every English caption appears on screen at the exact moment you should say its
-   Hinglish line. The video *is* the teleprompter. Read along, in your own voice, flat
-   and tired, and you are in sync by construction.
-3. Add a music bed from CapCut's licensed library. Bring it up hard at **0:10** — that
-   is where the screen wakes and the countries start landing.
-4. Optional: drop your own clips *underneath* the video track at low opacity if you
-   shot any. The reel is designed to hold without them.
-5. Export and post.
-
-Everything below is for rebuilding or re-timing the cut in FableCut. If step 1-5 got you
-a reel you like, you can stop reading here.
-
----
-
-## The rule that still holds
-
-**Audio = Hinglish. On-screen text = English.** Unchanged, and it's the single
-best decision in the original brief. The US is the #1 country (954) and most of
-those people watch muted. Hinglish audio carries India; English text carries
-everyone else. Every caption in `project.json` is English.
-
----
-
-## What was missing — and what replaced it
-
-### 1. Frame 1 gave nobody a reason to stay
-The original opens on a black screen, no music, no on-screen text, a flat voice
-speaking Hinglish. Judged against your own hook rubric (`app/agents/analysts.py`
-in viral-research-agent) that scores `on_screen_hook: none read` and
-`curiosity_gap: none`. Muted viewers — the majority — see literally nothing.
-
-**Now:** the reel cold-opens on the payoff. The analytics panel, 2,217 readers,
-7 countries, and one English line across the bottom:
-
-> **Nobody read a word I wrote.**
-
-The text contradicts the numbers on screen. That contradiction *is* the curiosity
-gap, and it's readable with the sound off. The black screen and the flat
-"Main last bench wala tha." now arrive at **1.1s**, where they land as a pattern
-interrupt instead of a scroll trigger.
-
-### 2. The 7–10s silence was a hole, not a device
-Holding a beat inside "Hafton tak… koi nahi padhta tha" is the right instinct —
-but silence only stops a scroll when the *picture* is still moving. Three seconds
-of static frame sits exactly where Instagram measures first drop-off.
-
-**Now:** the audio pause is kept exactly as written. The frame is filled with the
-**zero screen** — the same analytics panel, reading `0`, with a **WEEK 1 → WEEK 6**
-counter ticking underneath and seven empty rows. The number never moves; the weeks
-do. Motion without progress is what holds the scroll here — and it sets up the
-payoff, because at 11.6s the viewer recognises the same screen filling in.
-
-### 3. The numbers were the weakest visual and the longest section
-Seven seconds of screen recording. Low contrast, hard to read on a phone,
-illegible once someone re-shares it compressed.
-
-**Now:** purpose-built animated panel (`library/svg/icu-analytics-reveal.svg`).
-One country lands per **0.85s** beat, its bar grows, and the running total
-re-totals on every row: `0 → 954 → 1,818 → 1,966 → 2,080 → 2,129 → 2,177 → 2,217`.
-It is now the most watchable stretch of the reel and doubles as the receipt.
-
-### 4. There was no comment trigger inside the video
-Comments are the strongest reach signal on Reels, and the ask ("Country drop kar")
-lived only in the caption, where a fraction of viewers read it.
-
-**Now:** **"Which one are you? 👇"** on screen at **17.0s** — while the viewer is
-staring at a list of seven countries. That's the highest-intent placement for that
-question anywhere in the video. It stays in the caption too.
-
-### 5. There was no loop
-The original ends on black. Replays count as watch time, and a 28s reel that loops
-cleanly gets them for free.
-
-**Now:** the closing line holds clean on black for 0.85s — long enough to read and
-screenshot — then the analytics panel rises back up **crisp** behind it (to 90%) while
-the text fades to 12%. The last frame is the first frame. The viewer lands back on the
-numbers and the restart reads as intentional.
-
-### 6. Saying the domain out loud is a reach tax
-"icudecodedd dot com" spoken over the last 3 seconds is an explicit off-platform
-push at the exact moment the algorithm decides whether to keep serving the reel —
-and it makes the emotional close land on an ad.
-
-**Now:** the domain is on screen for ~11.5s, but as the **header of the analytics
-panel** — the property being measured, not a plug. It reads as credibility instead
-of a CTA. The spoken close stays purely emotional; the link stays in caption and bio.
-
-### 7. 30s was long, and the captions were too sparse
-Completion rate drives distribution, and the original ran two caption blocks of 3s
-and 7s — long stretches with no on-screen change.
-
-**Now:** **28.0s**, every dead beat removed, and **15 caption cuts** instead of 10.
-Each cut is a micro-reset of attention.
-
-### Also added: the grade and the mix now carry the emotion
-- **Backbench section** — `faded`, saturation 55, temperature −25. Drained, like a memory.
-- **Norway line** — footage opens at brightness 26 and lifts to 68 over 0.32s, so the
-  frame *dips to near-black* as the whisper starts.
-- **Payoff** — the only warm, saturated, bright moment in the reel.
-- **Music** is keyframed, not flat: 0.14 under the intro, swelling to 0.46 across the
-  silence, slamming to **0.88** on the drop at 10.2s, ducking to **0.26** for the nurse
-  line so the whisper actually reads as one, then out to 0.10 for the loop.
-
-### What was deliberately left alone
-The spine of the script is strong and it wasn't touched: specific numbers, a real
-third party doing the validating (the nurse), the dismissiveness of "Karne do", and
-a closing aphorism that people can quote without context. Keeping medical terms in
-English is right. The delivery notes — flat, tired, phone mic, no performance — are
-right, and they matter more than anything in this document.
-
-> One honest flag: the panel presents 954 / 864 / 148 / 114 / 49 / 48 / 40 as real
-> analytics. If those are your real numbers, this is your strongest asset. If they
-> were illustrative, change them to the real ones before posting — a receipt that
-> doesn't survive a DM asking "which tool?" costs more than it earns.
-
----
-
-## The cut, beat by beat
-
-| Time | On screen | VO (Hinglish) | Caption (English) |
-|---|---|---|---|
-| 0.00–1.10 | **Analytics, settled** · 2,217 · 7 countries | *(silence)* | Nobody read a<br>word I wrote. |
-| 1.10–2.60 | black | "Main last bench wala tha." | I was the last-bench guy. |
-| 2.60–3.75 | classroom, drained | "Kisi ne kabhi meri baat nahi puchi." | Nobody asked my opinion. |
-| 3.80–4.70 | classroom | "Toh maine bolna hi band kar diya." | So I stopped talking. |
-| 4.70–5.85 | hands typing, dark | "Bas likhna shuru kar diya." | So I started writing<br>ICU notes. |
-| 5.90–7.20 | typing | "ICU notes. Ventilator. ABG. Protocols." | Ventilator. ABG. Protocols. *(cyan)* |
-| 7.20–10.20 | **Zero screen** · `0` · WEEK 1→6 ticking | "Hafton tak…&nbsp;&nbsp;koi nahi padhta tha." | For weeks — nobody read it. |
-| 10.20–11.60 | screen wakes · **shake + RGB split + music slam** | "Phir ek din maine analytics kholi." | Then I opened my analytics. |
-| 11.60–18.40 | **Reveal** · one country per 0.85s beat | "United States. India. France. Norway. China. Singapore. Brazil." | *(the panel is the caption)* |
-| 16.95–18.35 | ↑ over the full list | — | **Which one are you? 👇** |
-| 18.40–20.60 | dip to near-black, night · **music ducks** | "Norway mein kahin, ek nurse ne raat ke 3 baje mera page khola." | A nurse in Norway<br>opened my page<br>at 3 AM. |
-| 20.70–22.15 | night | "Usse na mera naam pata hai…" | She doesn't know my name. |
-| 22.25–23.60 | night | "…na ye ki main class mein kahan baithta tha." | She doesn't know where I sat. |
-| 23.60–25.60 | classroom, fast, whip cut | "Jo haste the, wahi sabse pehle check karte hain. Karne do." | The ones who laughed<br>check first. Let them. |
-| 25.60–26.60 | black | "Duniya ye nahi puchti tum kahan baithe the." | The world doesn't ask<br>where you sat. |
-| 26.60–28.00 | black, then **analytics rises crisp** as the line fades | "Duniya puchti hai — tumne banaya kya." | **It asks what<br>you built.** |
-| 28.00 | → loops to frame 1 | | |
-
-**The three moments that decide this reel:** the contradiction at 0.0s, the ticking
-zero at 7.2s, and the ducked whisper at 18.4s. Everything else is support.
-
----
-
-## What to record
-
-Drop these into `media/` with **exactly these names** — the timeline is already
-wired to them.
-
-| File | What it is | Needs |
-|---|---|---|
-| `vo-hinglish.wav` | the VO, one take | ≥ 26.5s. Starts at 1.1s on the timeline. |
-| `music-bed.mp3` | music | ≥ 28s. Something that can carry a drop at 10.2s. |
-| `shot-classroom.mp4` | back row / empty classroom / desk | ≥ 4.5s (used twice) |
-| `shot-typing.mp4` | hands typing, dark room | ≥ 2.5s |
-| `shot-screen.mp4` | phone or laptop screen waking | ≥ 1.4s |
-| `shot-night.mp4` | window at night, ward corridor, anything still and dark | ≥ 5.2s |
-| `sfx-riser.wav` | riser landing at 10.2s | ≥ 1.6s — *optional, delete the clip if you skip it* |
-| `sfx-impact.wav` | one boom | ≥ 1.2s — *optional* |
-
-**Footage is texture, not content.** Every shot sits at 40–55% opacity behind the
-text, and the four analytics screens carry 11.5 of the 28 seconds on their own. If
-you have no footage at all, delete the V1 clips — the reel still works end to end
-on black plus the panels.
-
-### Recording the VO against the grid
-Read to these marks; the editor's gold markers are already on them.
-
-```
-1.1   Main last bench wala tha.
-2.6   Kisi ne kabhi meri baat nahi puchi. Toh maine bolna hi band kar diya.
-4.7   Bas likhna shuru kar diya. ICU notes. Ventilator. ABG. Protocols.
-7.2   Hafton tak…              ← hold a full beat in the dots
-8.8   koi nahi padhta tha.
-10.2  Phir ek din maine analytics kholi.
-11.8  United States.  12.65 India.  13.5 France.  14.35 Norway.
-15.2  China.          16.05 Singapore.  16.9 Brazil.
-18.5  Norway mein kahin, ek nurse ne raat ke 3 baje mera page khola.
-20.7  Usse na mera naam pata hai…
-22.25 …na ye ki main class mein kahan baithta tha.
-23.65 Jo haste the, wahi sabse pehle check karte hain. Karne do.
-25.7  Duniya ye nahi puchti tum kahan baithe the.
-26.6  Duniya puchti hai — tumne banaya kya.
-```
-
-Flat, tired, real. Do not perform it. Phone mic, six inches, quiet room — studio-clean
-audio makes this kind of line sound rehearsed, which is the one thing it can't sound.
-Nothing is spoken after 28.0s: **do not say the domain out loud.**
-
----
-
-## Caption
-
-```
-4 saal last bench pe baitha.
-Pichle hafte 7 countries ne mera page khola. 🇺🇸🇮🇳🇫🇷🇳🇴🇨🇳🇸🇬🇧🇷
-
-Agar tu abhi backbencher hai — bas banana shuru kar de.
-Duniya kabhi nahi puchti tu kahan baitha tha.
-
-Tu kahan se padh raha hai? Country drop kar 👇
-icudecodedd.com
-```
-
-Unchanged — it works. The comment ask is now in the video too, at 17.0s.
-
-## Posting
-
-Hinglish version first, **8:45 PM IST**. If it beats your average, re-cut the same
-timeline with an English VO and post 6–8 days later: swap `vo-hinglish.wav` for the
-English take and nothing else in `project.json` needs to move. Fresh audio reads as
-a new reel and gives the US audience a version built for them.
-
----
-
-## Files this cut added
-
-| File | |
-|---|---|
-| `reels/icu-last-bench.project.json` | the 28s timeline — 29 clips, 19 markers |
-| `reels/icu-last-bench.mp4` | the rendered 28s video — captions + screens, silent |
-| `library/svg/icu-analytics-cold.svg` | settled panel — cold open + loop bridge |
-| `library/svg/icu-analytics-reveal.svg` | the 6.8s country-by-country reveal |
-| `library/svg/icu-zero-readers.svg` | the `0` / WEEK 1→6 retention hold |
-| `library/svg/icu-screen-wake.svg` | the 10.2s drop — screen wakes, rows about to fill |
-
-The SVGs are self-contained, use system fonts only (they rasterise through a data
-URL, so no webfont can load), and draw their flags as plain rects — no emoji, which
-Windows will not render as flags.

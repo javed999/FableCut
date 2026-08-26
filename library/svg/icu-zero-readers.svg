@@ -16,7 +16,7 @@
   <rect x="60" y="150" width="960" height="1300" rx="44" fill="#0d1117" stroke="#1c2128" stroke-width="2"/>
   <circle class="dot" cx="132" cy="238" r="9" fill="#4ade80"/>
   <text x="158" y="252" font-size="40" font-weight="700" fill="#e6edf3">icudecodedd.com</text>
-  <text x="130" y="312" font-size="29" font-weight="600" fill="#7d8590" letter-spacing="5">READERS &#183; LAST 7 DAYS</text>
+  <text x="130" y="312" font-size="29" font-weight="600" fill="#7d8590" letter-spacing="5">PAGEVIEWS &#183; LAST 7 DAYS</text>
   <line x1="130" y1="356" x2="950" y2="356" stroke="#21262d" stroke-width="2"/>
   <text x="508" y="560" font-size="190" font-weight="800" fill="#e6edf3" text-anchor="middle">0</text>
   <rect class="caret" x="572" y="428" width="11" height="136" fill="#4ade80" opacity=".8"/>

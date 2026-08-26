@@ -4,7 +4,7 @@
   "height": 1920,
   "fps": 30,
   "background": "#000000",
-  "revision": 4,
+  "revision": 5,
   "inPoint": 0,
   "outPoint": 28,
   "folders": [
@@ -446,9 +446,9 @@
         "scale": 0.92,
         "y": -70,
         "filterPreset": "midnight",
-        "vignette": 30,
+        "vignette": 26,
         "grain": 8,
-        "brightness": 96
+        "brightness": 100
       },
       "transitionOut": {
         "type": "fade",
@@ -468,10 +468,10 @@
         "fit": "contain",
         "scale": 0.92,
         "y": -70,
-        "filterPreset": "midnight",
-        "vignette": 46,
-        "grain": 10,
-        "brightness": 84
+        "filterPreset": "none",
+        "vignette": 30,
+        "grain": 9,
+        "brightness": 98
       },
       "transitionIn": {
         "type": "fade",

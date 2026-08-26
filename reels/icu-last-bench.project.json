@@ -4,7 +4,7 @@
   "height": 1920,
   "fps": 30,
   "background": "#000000",
-  "revision": 3,
+  "revision": 4,
   "inPoint": 0,
   "outPoint": 28,
   "folders": [
@@ -123,6 +123,15 @@
       "name": "icu-zero-readers.svg",
       "kind": "svg",
       "src": "/library/svg/icu-zero-readers.svg",
+      "width": 1080,
+      "height": 1920,
+      "folderId": "f_screens"
+    },
+    {
+      "id": "m_wake",
+      "name": "icu-screen-wake.svg",
+      "kind": "svg",
+      "src": "/library/svg/icu-screen-wake.svg",
       "width": 1080,
       "height": 1920,
       "folderId": "f_screens"
@@ -471,6 +480,54 @@
       "transitionOut": {
         "type": "fade",
         "duration": 0.15
+      }
+    },
+    {
+      "id": "c_v2_wake",
+      "mediaId": "m_wake",
+      "kind": "svg",
+      "track": "V2",
+      "name": "screen wakes",
+      "start": 10.2,
+      "in": 0,
+      "duration": 1.4,
+      "props": {
+        "fit": "contain",
+        "scale": 0.92,
+        "y": -70,
+        "filterPreset": "none",
+        "brightness": 106,
+        "saturation": 112,
+        "vignette": 22,
+        "grain": 8
+      },
+      "keyframes": {
+        "shake": [
+          {
+            "t": 0,
+            "v": 26
+          },
+          {
+            "t": 0.38,
+            "v": 0,
+            "ease": "ease-out"
+          }
+        ],
+        "rgbSplit": [
+          {
+            "t": 0,
+            "v": 7
+          },
+          {
+            "t": 0.38,
+            "v": 0,
+            "ease": "ease-out"
+          }
+        ]
+      },
+      "transitionOut": {
+        "type": "fade",
+        "duration": 0.12
       }
     },
     {

@@ -19,6 +19,30 @@ Then drop the files listed under **What to record** into `media/` and it plays.
 
 ---
 
+## If you don't want to touch code
+
+A rendered video ships with this cut: **`reels/icu-last-bench.mp4`** — 1080x1920,
+28.0s, every caption and all four analytics screens burned in, exactly as the timeline
+plays them. It has **no sound**, and no footage behind the text (there was none to use).
+
+That is deliberate, and it is the whole non-coder path:
+
+1. Open the MP4 in **CapCut** (or Instagram's own reel editor). Drop it on the timeline.
+2. **Record the Hinglish VO straight onto it.** You do not need the script in front of
+   you — every English caption appears on screen at the exact moment you should say its
+   Hinglish line. The video *is* the teleprompter. Read along, in your own voice, flat
+   and tired, and you are in sync by construction.
+3. Add a music bed from CapCut's licensed library. Bring it up hard at **0:10** — that
+   is where the screen wakes and the countries start landing.
+4. Optional: drop your own clips *underneath* the video track at low opacity if you
+   shot any. The reel is designed to hold without them.
+5. Export and post.
+
+Everything below is for rebuilding or re-timing the cut in FableCut. If step 1-5 got you
+a reel you like, you can stop reading here.
+
+---
+
 ## The rule that still holds
 
 **Audio = Hinglish. On-screen text = English.** Unchanged, and it's the single
@@ -225,9 +249,11 @@ a new reel and gives the US audience a version built for them.
 | File | |
 |---|---|
 | `reels/icu-last-bench.project.json` | the 28s timeline — 29 clips, 19 markers |
+| `reels/icu-last-bench.mp4` | the rendered 28s video — captions + screens, silent |
 | `library/svg/icu-analytics-cold.svg` | settled panel — cold open + loop bridge |
 | `library/svg/icu-analytics-reveal.svg` | the 6.8s country-by-country reveal |
 | `library/svg/icu-zero-readers.svg` | the `0` / WEEK 1→6 retention hold |
+| `library/svg/icu-screen-wake.svg` | the 10.2s drop — screen wakes, rows about to fill |
 
 The SVGs are self-contained, use system fonts only (they rasterise through a data
 URL, so no webfont can load), and draw their flags as plain rects — no emoji, which

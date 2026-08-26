@@ -4,7 +4,7 @@
   "height": 1920,
   "fps": 30,
   "background": "#000000",
-  "revision": 2,
+  "revision": 3,
   "inPoint": 0,
   "outPoint": 28,
   "folders": [
@@ -539,9 +539,9 @@
       "kind": "svg",
       "track": "V2",
       "name": "LOOP bridge",
-      "start": 27.2,
+      "start": 27.45,
       "in": 0,
-      "duration": 0.8,
+      "duration": 0.55,
       "props": {
         "fit": "contain",
         "scale": 0.92,
@@ -549,8 +549,7 @@
         "filterPreset": "midnight",
         "vignette": 30,
         "grain": 8,
-        "brightness": 96,
-        "blur": 3
+        "brightness": 96
       },
       "keyframes": {
         "opacity": [
@@ -559,8 +558,8 @@
             "v": 0
           },
           {
-            "t": 0.55,
-            "v": 0.45,
+            "t": 0.45,
+            "v": 0.9,
             "ease": "ease-out"
           }
         ]
@@ -924,6 +923,23 @@
         "textShadow": 26,
         "textAnim": "rise-mask",
         "wordRate": 0.16
+      },
+      "keyframes": {
+        "opacity": [
+          {
+            "t": 0,
+            "v": 1
+          },
+          {
+            "t": 1.1,
+            "v": 1
+          },
+          {
+            "t": 1.4,
+            "v": 0.12,
+            "ease": "ease-out"
+          }
+        ]
       }
     },
     {

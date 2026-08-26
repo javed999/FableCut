@@ -78,9 +78,10 @@ question anywhere in the video. It stays in the caption too.
 The original ends on black. Replays count as watch time, and a 28s reel that loops
 cleanly gets them for free.
 
-**Now:** the last 0.8s dissolves the analytics panel back up (45%, softly blurred)
-underneath the closing line, so the final frame rhymes with frame 1. The viewer
-lands back on the numbers and the restart reads as intentional.
+**Now:** the closing line holds clean on black for 0.85s — long enough to read and
+screenshot — then the analytics panel rises back up **crisp** behind it (to 90%) while
+the text fades to 12%. The last frame is the first frame. The viewer lands back on the
+numbers and the restart reads as intentional.
 
 ### 6. Saying the domain out loud is a reach tax
 "icudecodedd dot com" spoken over the last 3 seconds is an explicit off-platform
@@ -140,7 +141,7 @@ right, and they matter more than anything in this document.
 | 22.25–23.60 | night | "…na ye ki main class mein kahan baithta tha." | She doesn't know where I sat. |
 | 23.60–25.60 | classroom, fast, whip cut | "Jo haste the, wahi sabse pehle check karte hain. Karne do." | The ones who laughed<br>check first. Let them. |
 | 25.60–26.60 | black | "Duniya ye nahi puchti tum kahan baithe the." | The world doesn't ask<br>where you sat. |
-| 26.60–28.00 | black → **analytics fades back up** | "Duniya puchti hai — tumne banaya kya." | **It asks what<br>you built.** |
+| 26.60–28.00 | black, then **analytics rises crisp** as the line fades | "Duniya puchti hai — tumne banaya kya." | **It asks what<br>you built.** |
 | 28.00 | → loops to frame 1 | | |
 
 **The three moments that decide this reel:** the contradiction at 0.0s, the ticking

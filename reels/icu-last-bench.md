@@ -172,3 +172,35 @@ cp reels/icu-last-bench.project.json project.json
 # put talk.mp4 + vo.m4a back in media/ (both derive from the source video)
 node server.js          # → http://localhost:7777
 ```
+
+---
+
+## Corrections after review
+
+Four faults found on review of the first re-cut, all fixed:
+
+1. **The ICU/ABG captions were ~3 seconds late, and one was invented.** Sampling
+   the caption band every 0.4s shows he says **"ICU notes" at 4.7–6.2** and
+   **"ABG protocols" at 6.2–7.8**, then pauses 7.8–9.9. The cut had a fabricated
+   line — *"So I started writing instead."* — sitting on top of those words at
+   4.10–7.75, and his real line running late at 7.95–10.05, spilling into the
+   next section. The fabricated caption is gone; the two real ones land on his
+   voice.
+
+2. **His screen is now shown as proof.** Credibility needs the real artefact, not
+   only a clean redraw. His dashboard holds the frame for 2.57s at 11.83 —
+   cropped clear of his old caption, labelled *"My actual dashboard."*, showing
+   the full list, the map, and the Windows clock reading 25-08-2026 — then pushes
+   in on the numbers and hands off to the panel. A blurred bed of the same
+   footage fills the frame behind it.
+
+3. **The panel now moves.** The first re-cut reproduced the exact fault it was
+   built to fix: frames at 13.2s and 14.4s were *identical*, as were 18.0s and
+   19.2s — a locked-off graphic for 12.4s. The panel now travels down the list at
+   1.12x, tracking each row as it is named, and pulls back for the Norway
+   highlight. The reveal clip carries `in: 2.47` so the SVG's own clock stays
+   aligned to his voice even though the clip starts later.
+
+4. **24.13s to the end is his original, untouched** — uncropped, ungraded, his own
+   burned-in captions. All six replacement captions and the loop panel were
+   removed from that range.

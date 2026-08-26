@@ -62,14 +62,26 @@ one character at a time. To a muted scroll that is an empty frame.
 
 ### 5. Two takes ran long and static
 
-`3.93 → 10.17` (6.2s) and `25.37 → 33.7` (8.3s) are single locked-off shots with
-no cut. Both now carry a punch-in.
+`2.80 → 7.87` (5.1s) and `30.15 → 33.7` (3.6s) are single locked-off shots. Both
+now carry a punch-in.
+
+### 6. A 0.27-second shot was doing no work
+
+At `29.83 → 30.10` there is an over-shoulder of someone typing at a laptop in a
+dark room — the only literal "3 AM" image in the whole reel, and far too brief to
+register. It is now stretched to **1.08s at 0.25× speed** and placed under
+*"opened my page at 3 AM"*, where it illustrates the line.
 
 ---
 
 ## What the re-cut does
 
 ### Picture
+- **The headless Chromium that composites has no H.264/AAC decoder** (it rejects
+  MP4 with `DEMUXER_ERROR_NO_SUPPORTED_STREAMS`), so the source is transcoded to
+  VP9/Opus WebM for rendering. A first render silently produced a 1.1 MB file of
+  pure black frames before this was caught — the giveaway was the bitrate, not
+  the logs, which reported `1011/1011` and `ok: true`.
 - **Cropped `990×1760` at x=225, y=0**, then scaled to 1080×1920. This removes the
   old captions completely — no blur patch, no cover-up — *and* tightens the
   framing, which was loose. His head keeps its headroom.

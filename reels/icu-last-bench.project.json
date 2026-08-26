@@ -1,0 +1,1059 @@
+{
+  "name": "ICU Decoded — Last Bench (Hinglish VO / English captions)",
+  "width": 1080,
+  "height": 1920,
+  "fps": 30,
+  "background": "#000000",
+  "revision": 2,
+  "inPoint": 0,
+  "outPoint": 28,
+  "folders": [
+    {
+      "id": "f_screens",
+      "name": "Analytics screens",
+      "parentId": null,
+      "open": true
+    },
+    {
+      "id": "f_footage",
+      "name": "Footage",
+      "parentId": null,
+      "open": true
+    },
+    {
+      "id": "f_audio",
+      "name": "Audio",
+      "parentId": null,
+      "open": true
+    }
+  ],
+  "markers": [
+    {
+      "t": 0.0,
+      "label": "HOOK — cold open on the receipts"
+    },
+    {
+      "t": 1.1,
+      "label": "cut to black · VO in"
+    },
+    {
+      "t": 2.6,
+      "label": "classroom"
+    },
+    {
+      "t": 4.7,
+      "label": "typing"
+    },
+    {
+      "t": 7.2,
+      "label": "the zero screen (retention hold)"
+    },
+    {
+      "t": 10.2,
+      "label": "DROP — analytics opens"
+    },
+    {
+      "t": 11.6,
+      "label": "REVEAL"
+    },
+    {
+      "t": 11.8
+    },
+    {
+      "t": 12.65
+    },
+    {
+      "t": 13.5
+    },
+    {
+      "t": 14.35
+    },
+    {
+      "t": 15.2
+    },
+    {
+      "t": 16.05
+    },
+    {
+      "t": 16.9
+    },
+    {
+      "t": 18.4,
+      "label": "SHARE MOMENT — Norway"
+    },
+    {
+      "t": 23.6,
+      "label": "let them"
+    },
+    {
+      "t": 25.6,
+      "label": "close"
+    },
+    {
+      "t": 27.2,
+      "label": "LOOP bridge"
+    },
+    {
+      "t": 28.0,
+      "label": "END / loops to 0"
+    }
+  ],
+  "disabledTracks": [],
+  "media": [
+    {
+      "id": "m_cold",
+      "name": "icu-analytics-cold.svg",
+      "kind": "svg",
+      "src": "/library/svg/icu-analytics-cold.svg",
+      "width": 1080,
+      "height": 1920,
+      "folderId": "f_screens"
+    },
+    {
+      "id": "m_reveal",
+      "name": "icu-analytics-reveal.svg",
+      "kind": "svg",
+      "src": "/library/svg/icu-analytics-reveal.svg",
+      "width": 1080,
+      "height": 1920,
+      "folderId": "f_screens"
+    },
+    {
+      "id": "m_zero",
+      "name": "icu-zero-readers.svg",
+      "kind": "svg",
+      "src": "/library/svg/icu-zero-readers.svg",
+      "width": 1080,
+      "height": 1920,
+      "folderId": "f_screens"
+    },
+    {
+      "id": "m_class",
+      "name": "shot-classroom.mp4",
+      "kind": "video",
+      "src": "/media/shot-classroom.mp4",
+      "folderId": "f_footage"
+    },
+    {
+      "id": "m_typing",
+      "name": "shot-typing.mp4",
+      "kind": "video",
+      "src": "/media/shot-typing.mp4",
+      "folderId": "f_footage"
+    },
+    {
+      "id": "m_screen",
+      "name": "shot-screen.mp4",
+      "kind": "video",
+      "src": "/media/shot-screen.mp4",
+      "folderId": "f_footage"
+    },
+    {
+      "id": "m_night",
+      "name": "shot-night.mp4",
+      "kind": "video",
+      "src": "/media/shot-night.mp4",
+      "folderId": "f_footage"
+    },
+    {
+      "id": "m_vo",
+      "name": "vo-hinglish.wav",
+      "kind": "audio",
+      "src": "/media/vo-hinglish.wav",
+      "folderId": "f_audio"
+    },
+    {
+      "id": "m_music",
+      "name": "music-bed.mp3",
+      "kind": "audio",
+      "src": "/media/music-bed.mp3",
+      "folderId": "f_audio"
+    },
+    {
+      "id": "m_riser",
+      "name": "sfx-riser.wav",
+      "kind": "audio",
+      "src": "/media/sfx-riser.wav",
+      "folderId": "f_audio"
+    },
+    {
+      "id": "m_impact",
+      "name": "sfx-impact.wav",
+      "kind": "audio",
+      "src": "/media/sfx-impact.wav",
+      "folderId": "f_audio"
+    }
+  ],
+  "clips": [
+    {
+      "id": "c_v1_class",
+      "mediaId": "m_class",
+      "kind": "video",
+      "track": "V1",
+      "name": "classroom",
+      "start": 2.6,
+      "in": 0,
+      "duration": 2.1,
+      "props": {
+        "fit": "cover",
+        "opacity": 0.42,
+        "volume": 0,
+        "filterPreset": "faded",
+        "saturation": 55,
+        "temperature": -25,
+        "brightness": 82,
+        "vignette": 38,
+        "grain": 16
+      },
+      "keyframes": {
+        "scale": [
+          {
+            "t": 0,
+            "v": 1.06
+          },
+          {
+            "t": 2.1,
+            "v": 1.14,
+            "ease": "linear"
+          }
+        ]
+      },
+      "transitionIn": {
+        "type": "fade",
+        "duration": 0.35
+      }
+    },
+    {
+      "id": "c_v1_typing",
+      "mediaId": "m_typing",
+      "kind": "video",
+      "track": "V1",
+      "name": "typing",
+      "start": 4.7,
+      "in": 0,
+      "duration": 2.5,
+      "props": {
+        "fit": "cover",
+        "opacity": 0.48,
+        "volume": 0,
+        "filterPreset": "cinematic",
+        "brightness": 74,
+        "saturation": 62,
+        "temperature": -14,
+        "vignette": 44,
+        "grain": 20
+      },
+      "keyframes": {
+        "scale": [
+          {
+            "t": 0,
+            "v": 1.04
+          },
+          {
+            "t": 2.5,
+            "v": 1.12,
+            "ease": "linear"
+          }
+        ]
+      },
+      "transitionIn": {
+        "type": "fade",
+        "duration": 0.3
+      },
+      "transitionOut": {
+        "type": "fade",
+        "duration": 0.3
+      }
+    },
+    {
+      "id": "c_v1_screen",
+      "mediaId": "m_screen",
+      "kind": "video",
+      "track": "V1",
+      "name": "phone / screen wakes",
+      "start": 10.2,
+      "in": 0,
+      "duration": 1.4,
+      "props": {
+        "fit": "cover",
+        "opacity": 0.8,
+        "volume": 0,
+        "filterPreset": "cinematic",
+        "brightness": 104,
+        "saturation": 112,
+        "vignette": 26,
+        "grain": 10
+      },
+      "keyframes": {
+        "shake": [
+          {
+            "t": 0,
+            "v": 26
+          },
+          {
+            "t": 0.38,
+            "v": 0,
+            "ease": "ease-out"
+          }
+        ],
+        "rgbSplit": [
+          {
+            "t": 0,
+            "v": 11
+          },
+          {
+            "t": 0.38,
+            "v": 0,
+            "ease": "ease-out"
+          }
+        ],
+        "scale": [
+          {
+            "t": 0,
+            "v": 1.16
+          },
+          {
+            "t": 0.5,
+            "v": 1.0,
+            "ease": "ease-out"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c_v1_night",
+      "mediaId": "m_night",
+      "kind": "video",
+      "track": "V1",
+      "name": "night / window",
+      "start": 18.4,
+      "in": 0,
+      "duration": 5.2,
+      "props": {
+        "fit": "cover",
+        "opacity": 0.55,
+        "volume": 0,
+        "filterPreset": "cinematic",
+        "brightness": 68,
+        "saturation": 70,
+        "temperature": -12,
+        "vignette": 52,
+        "grain": 20
+      },
+      "keyframes": {
+        "brightness": [
+          {
+            "t": 0,
+            "v": 26
+          },
+          {
+            "t": 0.32,
+            "v": 68,
+            "ease": "ease-out"
+          }
+        ],
+        "scale": [
+          {
+            "t": 0,
+            "v": 1.02
+          },
+          {
+            "t": 5.2,
+            "v": 1.1,
+            "ease": "linear"
+          }
+        ]
+      },
+      "transitionIn": {
+        "type": "fade",
+        "duration": 0.25
+      }
+    },
+    {
+      "id": "c_v1_class2",
+      "mediaId": "m_class",
+      "kind": "video",
+      "track": "V1",
+      "name": "classroom (fast)",
+      "start": 23.6,
+      "in": 2.0,
+      "duration": 2.0,
+      "props": {
+        "fit": "cover",
+        "opacity": 0.4,
+        "volume": 0,
+        "speed": 1.25,
+        "filterPreset": "faded",
+        "saturation": 45,
+        "temperature": -22,
+        "brightness": 86,
+        "vignette": 36,
+        "grain": 18
+      },
+      "keyframes": {
+        "shake": [
+          {
+            "t": 0,
+            "v": 12
+          },
+          {
+            "t": 0.22,
+            "v": 0,
+            "ease": "ease-out"
+          }
+        ],
+        "rgbSplit": [
+          {
+            "t": 0,
+            "v": 5
+          },
+          {
+            "t": 0.22,
+            "v": 0,
+            "ease": "ease-out"
+          }
+        ]
+      },
+      "transitionIn": {
+        "type": "whip",
+        "duration": 0.2
+      },
+      "transitionOut": {
+        "type": "fade",
+        "duration": 0.3
+      }
+    },
+    {
+      "id": "c_v2_cold",
+      "mediaId": "m_cold",
+      "kind": "svg",
+      "track": "V2",
+      "name": "COLD OPEN — the receipts",
+      "start": 0,
+      "in": 0,
+      "duration": 1.1,
+      "props": {
+        "fit": "contain",
+        "scale": 0.92,
+        "y": -70,
+        "filterPreset": "midnight",
+        "vignette": 30,
+        "grain": 8,
+        "brightness": 96
+      },
+      "transitionOut": {
+        "type": "fade",
+        "duration": 0.18
+      }
+    },
+    {
+      "id": "c_v2_zero",
+      "mediaId": "m_zero",
+      "kind": "svg",
+      "track": "V2",
+      "name": "zero readers (hold)",
+      "start": 7.2,
+      "in": 0,
+      "duration": 3.0,
+      "props": {
+        "fit": "contain",
+        "scale": 0.92,
+        "y": -70,
+        "filterPreset": "midnight",
+        "vignette": 46,
+        "grain": 10,
+        "brightness": 84
+      },
+      "transitionIn": {
+        "type": "fade",
+        "duration": 0.3
+      },
+      "transitionOut": {
+        "type": "fade",
+        "duration": 0.15
+      }
+    },
+    {
+      "id": "c_v2_reveal",
+      "mediaId": "m_reveal",
+      "kind": "svg",
+      "track": "V2",
+      "name": "REVEAL — 7 countries",
+      "start": 11.6,
+      "in": 0,
+      "duration": 6.8,
+      "props": {
+        "fit": "contain",
+        "scale": 0.92,
+        "y": -70,
+        "filterPreset": "none",
+        "brightness": 108,
+        "saturation": 116,
+        "temperature": 8,
+        "vignette": 20,
+        "grain": 8
+      },
+      "keyframes": {
+        "shake": [
+          {
+            "t": 0,
+            "v": 16
+          },
+          {
+            "t": 0.3,
+            "v": 0,
+            "ease": "ease-out"
+          }
+        ],
+        "rgbSplit": [
+          {
+            "t": 0,
+            "v": 7
+          },
+          {
+            "t": 0.3,
+            "v": 0,
+            "ease": "ease-out"
+          }
+        ],
+        "scale": [
+          {
+            "t": 0,
+            "v": 0.99
+          },
+          {
+            "t": 0.4,
+            "v": 0.92,
+            "ease": "ease-out"
+          }
+        ]
+      },
+      "transitionOut": {
+        "type": "fade",
+        "duration": 0.25
+      }
+    },
+    {
+      "id": "c_v2_loop",
+      "mediaId": "m_cold",
+      "kind": "svg",
+      "track": "V2",
+      "name": "LOOP bridge",
+      "start": 27.2,
+      "in": 0,
+      "duration": 0.8,
+      "props": {
+        "fit": "contain",
+        "scale": 0.92,
+        "y": -70,
+        "filterPreset": "midnight",
+        "vignette": 30,
+        "grain": 8,
+        "brightness": 96,
+        "blur": 3
+      },
+      "keyframes": {
+        "opacity": [
+          {
+            "t": 0,
+            "v": 0
+          },
+          {
+            "t": 0.55,
+            "v": 0.45,
+            "ease": "ease-out"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c_t_hook",
+      "mediaId": null,
+      "kind": "text",
+      "track": "V3",
+      "name": "HOOK",
+      "start": 0,
+      "in": 0,
+      "duration": 1.1,
+      "props": {
+        "text": "Nobody read a\nword I wrote.",
+        "font": "Archivo Black",
+        "fontSize": 76,
+        "uppercase": true,
+        "color": "#ffffff",
+        "align": "center",
+        "boxW": 920,
+        "boxH": 0,
+        "lineHeight": 1.14,
+        "y": 560,
+        "textShadow": 22,
+        "strokeWidth": 0,
+        "textAnim": "clip-reveal",
+        "wordRate": 0.09
+      }
+    },
+    {
+      "id": "c_t_1",
+      "mediaId": null,
+      "kind": "text",
+      "track": "V3",
+      "name": "L1",
+      "start": 1.15,
+      "in": 0,
+      "duration": 1.4,
+      "props": {
+        "text": "I was the last-bench guy.",
+        "font": "Inter",
+        "weight": 800,
+        "fontSize": 68,
+        "color": "#ffffff",
+        "align": "center",
+        "boxW": 900,
+        "y": 430,
+        "textShadow": 18,
+        "textAnim": "clip-reveal",
+        "wordRate": 0.1
+      }
+    },
+    {
+      "id": "c_t_2a",
+      "mediaId": null,
+      "kind": "text",
+      "track": "V3",
+      "name": "L2a",
+      "start": 2.65,
+      "in": 0,
+      "duration": 1.1,
+      "props": {
+        "text": "Nobody asked my opinion.",
+        "font": "Inter",
+        "weight": 800,
+        "fontSize": 64,
+        "color": "#ffffff",
+        "align": "center",
+        "boxW": 900,
+        "y": 430,
+        "textShadow": 18,
+        "textAnim": "clip-reveal",
+        "wordRate": 0.1
+      }
+    },
+    {
+      "id": "c_t_2b",
+      "mediaId": null,
+      "kind": "text",
+      "track": "V3",
+      "name": "L2b",
+      "start": 3.8,
+      "in": 0,
+      "duration": 0.85,
+      "props": {
+        "text": "So I stopped talking.",
+        "font": "Inter",
+        "weight": 800,
+        "fontSize": 64,
+        "color": "#ffffff",
+        "align": "center",
+        "boxW": 900,
+        "y": 430,
+        "textShadow": 18,
+        "textAnim": "clip-reveal",
+        "wordRate": 0.09
+      }
+    },
+    {
+      "id": "c_t_3a",
+      "mediaId": null,
+      "kind": "text",
+      "track": "V3",
+      "name": "L3a",
+      "start": 4.75,
+      "in": 0,
+      "duration": 1.1,
+      "props": {
+        "text": "So I started writing\nICU notes.",
+        "font": "Inter",
+        "weight": 800,
+        "fontSize": 64,
+        "color": "#ffffff",
+        "align": "center",
+        "boxW": 900,
+        "y": 430,
+        "textShadow": 18,
+        "textAnim": "clip-reveal",
+        "wordRate": 0.09
+      }
+    },
+    {
+      "id": "c_t_3b",
+      "mediaId": null,
+      "kind": "text",
+      "track": "V3",
+      "name": "L3b — clinical",
+      "start": 5.9,
+      "in": 0,
+      "duration": 1.25,
+      "props": {
+        "text": "Ventilator. ABG. Protocols.",
+        "font": "Inter",
+        "weight": 800,
+        "fontSize": 62,
+        "color": "#7dd3fc",
+        "align": "center",
+        "boxW": 900,
+        "y": 430,
+        "textShadow": 14,
+        "letterSpacing": 1,
+        "textAnim": "word-pop",
+        "wordRate": 0.14
+      }
+    },
+    {
+      "id": "c_t_4",
+      "mediaId": null,
+      "kind": "text",
+      "track": "V3",
+      "name": "L4 — the hold",
+      "start": 7.3,
+      "in": 0,
+      "duration": 2.8,
+      "props": {
+        "text": "For weeks — nobody read it.",
+        "font": "Inter",
+        "weight": 800,
+        "fontSize": 66,
+        "color": "#ffffff",
+        "align": "center",
+        "boxW": 900,
+        "y": 560,
+        "textShadow": 20,
+        "textAnim": "clip-reveal",
+        "wordRate": 0.13
+      }
+    },
+    {
+      "id": "c_t_5",
+      "mediaId": null,
+      "kind": "text",
+      "track": "V3",
+      "name": "L5",
+      "start": 10.25,
+      "in": 0,
+      "duration": 1.3,
+      "props": {
+        "text": "Then I opened my analytics.",
+        "font": "Inter",
+        "weight": 800,
+        "fontSize": 64,
+        "color": "#ffffff",
+        "align": "center",
+        "boxW": 900,
+        "y": 430,
+        "textShadow": 20,
+        "textAnim": "word-pop",
+        "wordRate": 0.1
+      }
+    },
+    {
+      "id": "c_t_cta",
+      "mediaId": null,
+      "kind": "text",
+      "track": "V3",
+      "name": "COMMENT BAIT",
+      "start": 16.95,
+      "in": 0,
+      "duration": 1.4,
+      "props": {
+        "text": "Which one are you? 👇",
+        "font": "Inter",
+        "weight": 800,
+        "fontSize": 58,
+        "color": "#ffd166",
+        "align": "center",
+        "boxW": 900,
+        "y": 560,
+        "textShadow": 18,
+        "textAnim": "word-pop",
+        "wordRate": 0.12
+      }
+    },
+    {
+      "id": "c_t_8a",
+      "mediaId": null,
+      "kind": "text",
+      "track": "V3",
+      "name": "SHARE LINE 1",
+      "start": 18.55,
+      "in": 0,
+      "duration": 2.05,
+      "props": {
+        "text": "A nurse in Norway\nopened my page\nat 3 AM.",
+        "font": "Playfair Display",
+        "fontSize": 70,
+        "bold": false,
+        "color": "#ffffff",
+        "align": "center",
+        "boxW": 900,
+        "lineHeight": 1.34,
+        "y": 0,
+        "textShadow": 24,
+        "letterSpacing": 1,
+        "textAnim": "clip-reveal",
+        "wordRate": 0.16
+      }
+    },
+    {
+      "id": "c_t_8b",
+      "mediaId": null,
+      "kind": "text",
+      "track": "V3",
+      "name": "SHARE LINE 2",
+      "start": 20.7,
+      "in": 0,
+      "duration": 1.45,
+      "props": {
+        "text": "She doesn't know my name.",
+        "font": "Playfair Display",
+        "fontSize": 66,
+        "bold": false,
+        "color": "#ffffff",
+        "align": "center",
+        "boxW": 900,
+        "lineHeight": 1.34,
+        "y": 0,
+        "textShadow": 24,
+        "letterSpacing": 1,
+        "textAnim": "clip-reveal",
+        "wordRate": 0.14
+      }
+    },
+    {
+      "id": "c_t_8c",
+      "mediaId": null,
+      "kind": "text",
+      "track": "V3",
+      "name": "SHARE LINE 3",
+      "start": 22.25,
+      "in": 0,
+      "duration": 1.3,
+      "props": {
+        "text": "She doesn't know where I sat.",
+        "font": "Playfair Display",
+        "fontSize": 66,
+        "bold": false,
+        "color": "#ffffff",
+        "align": "center",
+        "boxW": 900,
+        "lineHeight": 1.34,
+        "y": 0,
+        "textShadow": 24,
+        "letterSpacing": 1,
+        "textAnim": "clip-reveal",
+        "wordRate": 0.14
+      }
+    },
+    {
+      "id": "c_t_9",
+      "mediaId": null,
+      "kind": "text",
+      "track": "V3",
+      "name": "let them",
+      "start": 23.65,
+      "in": 0,
+      "duration": 1.9,
+      "props": {
+        "text": "The ones who laughed\ncheck first. Let them.",
+        "font": "Anton",
+        "fontSize": 76,
+        "bold": false,
+        "uppercase": true,
+        "color": "#ffffff",
+        "align": "center",
+        "boxW": 920,
+        "lineHeight": 1.1,
+        "y": 430,
+        "textShadow": 22,
+        "textAnim": "word-pop",
+        "wordRate": 0.1
+      }
+    },
+    {
+      "id": "c_t_10a",
+      "mediaId": null,
+      "kind": "text",
+      "track": "V3",
+      "name": "close A",
+      "start": 25.7,
+      "in": 0,
+      "duration": 0.85,
+      "props": {
+        "text": "The world doesn't ask\nwhere you sat.",
+        "font": "Inter",
+        "weight": 700,
+        "fontSize": 62,
+        "color": "#d8dee6",
+        "align": "center",
+        "boxW": 880,
+        "lineHeight": 1.2,
+        "y": -180,
+        "textShadow": 20,
+        "textAnim": "clip-reveal",
+        "wordRate": 0.07
+      }
+    },
+    {
+      "id": "c_t_10b",
+      "mediaId": null,
+      "kind": "text",
+      "track": "V3",
+      "name": "close B — the payoff",
+      "start": 26.6,
+      "in": 0,
+      "duration": 1.4,
+      "props": {
+        "text": "It asks what\nyou built.",
+        "font": "Archivo Black",
+        "fontSize": 92,
+        "uppercase": true,
+        "color": "#ffffff",
+        "color2": "#ffd166",
+        "align": "center",
+        "boxW": 920,
+        "lineHeight": 1.14,
+        "y": 80,
+        "textShadow": 26,
+        "textAnim": "rise-mask",
+        "wordRate": 0.16
+      }
+    },
+    {
+      "id": "c_a_vo",
+      "mediaId": "m_vo",
+      "kind": "audio",
+      "track": "A1",
+      "name": "Hinglish VO",
+      "start": 1.1,
+      "in": 0,
+      "duration": 26.5,
+      "props": {
+        "volume": 1
+      }
+    },
+    {
+      "id": "c_a_music",
+      "mediaId": "m_music",
+      "kind": "audio",
+      "track": "A2",
+      "name": "music bed",
+      "start": 0,
+      "in": 0,
+      "duration": 28,
+      "props": {
+        "volume": 0.4
+      },
+      "keyframes": {
+        "volume": [
+          {
+            "t": 0,
+            "v": 0.14
+          },
+          {
+            "t": 7.2,
+            "v": 0.2
+          },
+          {
+            "t": 10.1,
+            "v": 0.46,
+            "ease": "ease-in"
+          },
+          {
+            "t": 10.2,
+            "v": 0.88
+          },
+          {
+            "t": 18.3,
+            "v": 0.82
+          },
+          {
+            "t": 18.6,
+            "v": 0.26,
+            "ease": "ease-out"
+          },
+          {
+            "t": 23.55,
+            "v": 0.3
+          },
+          {
+            "t": 23.7,
+            "v": 0.62
+          },
+          {
+            "t": 25.6,
+            "v": 0.44
+          },
+          {
+            "t": 26.6,
+            "v": 0.22,
+            "ease": "ease-out"
+          },
+          {
+            "t": 28,
+            "v": 0.1
+          }
+        ]
+      }
+    },
+    {
+      "id": "c_a_riser",
+      "mediaId": "m_riser",
+      "kind": "audio",
+      "track": "A3",
+      "name": "riser → drop",
+      "start": 8.6,
+      "in": 0,
+      "duration": 1.6,
+      "props": {
+        "volume": 0.55
+      },
+      "keyframes": {
+        "volume": [
+          {
+            "t": 0,
+            "v": 0.1
+          },
+          {
+            "t": 1.6,
+            "v": 0.7,
+            "ease": "ease-in"
+          }
+        ]
+      }
+    },
+    {
+      "id": "c_a_impact",
+      "mediaId": "m_impact",
+      "kind": "audio",
+      "track": "A3",
+      "name": "impact",
+      "start": 10.2,
+      "in": 0,
+      "duration": 1.2,
+      "props": {
+        "volume": 0.75
+      }
+    },
+    {
+      "id": "c_a_impact2",
+      "mediaId": "m_impact",
+      "kind": "audio",
+      "track": "A3",
+      "name": "impact (reveal)",
+      "start": 11.6,
+      "in": 0,
+      "duration": 0.9,
+      "props": {
+        "volume": 0.45
+      }
+    }
+  ]
+}

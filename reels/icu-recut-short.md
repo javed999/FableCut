@@ -51,8 +51,23 @@ The panel is re-timed for the shorter runtime: rows land 0.15–1.95s, and Norwa
 lights gold at local 2.34s — which is out 11.95s, the moment he says *"in
 Norway"*.
 
-## What this is not
+## The version that also carries the announcement
 
-It is **not** the "it's free now" message. He never said those words, so that
-reel still needs to be shot. See `reels/icu-free-now.md` for its script and
-`reels/icu-free-now.mp4` for the visual track to record against.
+`reels/icu-story-free.mp4` — **25.9s** — is this cut with a 4.93s tail welded on:
+
+| Out | |
+| --- | --- |
+| 0.00–20.97 | this cut, his voice, his face, the 3,145 panel |
+| 20.97–25.90 | **his voice stops.** The panel softens behind two cards: *"The server is paid for."* then *"So from today — it's free. For everyone."* |
+
+He never says the announcement out loud, because he never recorded those words.
+Putting his last-bench audio under "From today I stopped charging" captions would
+have him *saying* one thing while the screen *reads* another — a mismatch a
+viewer cannot name but immediately distrusts.
+
+Landing it in silence is the stronger choice anyway: a title card in a sudden
+quiet hits harder than a line of narration, and nothing is claimed in a voice
+that never claimed it.
+
+The tail was rendered on its own (148 frames) and concatenated, rather than
+re-rendering all 777 — same result, a fraction of the time.

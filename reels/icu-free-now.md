@@ -67,6 +67,29 @@ New message, so it needs new audio — his voice cannot be made to say something
 never said. One take to camera, ≥ 28s, same setup as the last reel. Optionally a
 few seconds of hands/laptop.
 
+## Stock images
+
+Three supplied stills fill the stretches that were black:
+
+| Time | Image | Line it carries |
+| --- | --- | --- |
+| 2.55–5.90 | server racks | *"the server came out of my pocket"* |
+| 6.00–8.80 | "cost recovery" | *"Last week, it paid for itself."* |
+| 20.05–24.40 | money falling | *"You don't put a price on something growing on its own."* |
+
+All three are low resolution — 739×415, 656×467 and 460×288 — so filling a
+1080×1920 frame with `cover` would mean a 4–7× upscale and visible mush. Each is
+instead placed sharp at `contain` over a blurred, darkened copy of itself. Real
+upscale drops to 1.5–2.4×.
+
+The money still arrived at **67 mean luminance** against 24–30 for the rest of the
+reel — a white flash in a dark cut. Graded to 47: still the lightest frame, but a
+cut rather than a jolt.
+
+> Worth a second look before posting: the money image is tonally at odds with the
+> message. A man showered in cash reads "get rich", and the line under it is about
+> *not* charging. It either lands as irony or fights the point.
+
 ## Files
 
 | File | |

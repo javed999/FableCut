@@ -6,15 +6,19 @@ const fs = require('fs'), path = require('path');
 const OUT = process.argv[2];
 
 const ROWS = [
-  { cc:'us', name:'United States', old:954, now:1503, d:0.00 },
-  { cc:'in', name:'India',         old:864, now:1085, d:0.55 },
-  { cc:'sg', name:'Singapore',     old:48,  now:179,  d:1.10 },
-  { cc:'fr', name:'France',        old:148, now:171,  d:1.65 },
-  { cc:'no', name:'Norway',        old:114, now:114,  d:2.20 },
-  { cc:'de', name:'Germany',       old:null,now:51,   d:2.75 },   // never in the list before
-  { cc:'cn', name:'China',         old:49,  now:42,   d:3.30 },
+  { cc:'us', name:'United States', old:954, now:1503, d:0.30 },
+  { cc:'in', name:'India',         old:864, now:1085, d:0.80 },
+  { cc:'sg', name:'Singapore',     old:48,  now:179,  d:1.30 },
+  { cc:'fr', name:'France',        old:148, now:171,  d:1.80 },
+  { cc:'no', name:'Norway',        old:114, now:114,  d:2.30 },
+  { cc:'de', name:'Germany',       old:null,now:51,   d:4.00 },   // lands on "Germany is new"
+  { cc:'cn', name:'China',         old:49,  now:42,   d:4.60 },
 ];
 const OLD_TOTAL = 2217, NEW_TOTAL = 3145;
+/* A settled panel is this same file seeded at a later `in` point — every
+   animation uses fill-mode both, so t=6.5 shows it fully landed with Norway
+   not yet highlighted, and t=8.5 shows it highlighted. No second file. */
+const NORWAY_HL = 7.50;        // "Norway is still on the list"
 const MAX = 1503, BARW = 700, CHIPW = 42, CHIPH = 28;
 const rowY = i => 780 + i * 92;
 const comma = n => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
@@ -45,7 +49,8 @@ const rows = ROWS.map((r,i) => {
   return `
   <g class="row" style="--d:${r.d.toFixed(2)}s">
     <g transform="translate(130 ${y-24})">${chip(r.cc)}</g>
-    <text x="194" y="${y}" font-size="38" font-weight="600" fill="${isNew?'#ffd166':'#e6edf3'}">${r.name}</text>
+    ${same ? `<rect class="hlbox" style="--d:${NORWAY_HL}s" x="112" y="${y-40}" width="856" height="74" rx="12" fill="#ffd166"/>` : ''}
+    <text${same ? ` class="hltext" style="--d:${NORWAY_HL}s"` : ''} x="194" y="${y}" font-size="38" font-weight="600" fill="${isNew?'#ffd166':'#e6edf3'}">${r.name}</text>
     ${r.old !== null ? `<text class="oldn" style="--d:${r.d.toFixed(2)}s;animation-duration:${(0.45).toFixed(2)}s" x="806" y="${y}" font-size="30" font-weight="600" fill="#6b7280" text-anchor="end">${comma(r.old)}</text>` : ''}
     <text class="newn" style="--d:${(r.d+0.35).toFixed(2)}s" x="950" y="${y}" font-size="42" font-weight="800" fill="#e6edf3" text-anchor="end">${comma(r.now)}</text>
     <text class="badge" style="--d:${(r.d+0.45).toFixed(2)}s" x="806" y="${y}" font-size="27" font-weight="700" fill="${bcol}" text-anchor="end">${badge}</text>
@@ -73,9 +78,13 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" 
     @keyframes grow { from { transform:scaleX(0) } to { transform:scaleX(1) } }
     .row { animation: rowIn .4s cubic-bezier(.2,.9,.25,1) both; }
     @keyframes rowIn { from { opacity:0; transform:translateY(22px) } to { opacity:1; transform:none } }
-    .totOld { animation-name: handoff; animation-duration: 1.1s; animation-fill-mode: both; animation-timing-function: linear; }
+    .totOld { animation-name: handoff; animation-duration: 0.75s; animation-fill-mode: both; animation-timing-function: linear; }
     .totNew { animation: pop .5s cubic-bezier(.34,1.4,.64,1) both; transform-box: fill-box; transform-origin: center; }
     .delta  { animation: slidein .5s ease-out both; }
+    .hlbox { opacity: 0; animation: hlbox .45s ease-out both; }
+    @keyframes hlbox { from { opacity:0 } to { opacity:.13 } }
+    .hltext { animation: hltext .45s ease-out both; }
+    @keyframes hltext { to { fill:#ffd166 } }
   </style>
 
   <rect width="1080" height="1920" fill="#07090d"/>
@@ -87,9 +96,9 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" 
     <line x1="130" y1="356" x2="950" y2="356" stroke="#21262d" stroke-width="2"/>
   </g>
 
-  <text class="totOld" style="--d:0.15s" x="540" y="560" font-size="190" font-weight="800" fill="#6b7280" text-anchor="middle">${comma(OLD_TOTAL)}</text>
-  <text class="totNew" style="--d:1.25s" x="540" y="560" font-size="190" font-weight="800" fill="#e6edf3" text-anchor="middle">${comma(NEW_TOTAL)}</text>
-  <text class="delta"  style="--d:1.55s" x="540" y="632" font-size="40" font-weight="800" fill="#4ade80" text-anchor="middle">&#9650; +${comma(NEW_TOTAL-OLD_TOTAL)} vs last week</text>
+  <text class="totOld" style="--d:0.05s" x="540" y="560" font-size="190" font-weight="800" fill="#6b7280" text-anchor="middle">${comma(OLD_TOTAL)}</text>
+  <text class="totNew" style="--d:0.80s" x="540" y="560" font-size="190" font-weight="800" fill="#e6edf3" text-anchor="middle">${comma(NEW_TOTAL)}</text>
+  <text class="delta"  style="--d:1.10s" x="540" y="632" font-size="40" font-weight="800" fill="#4ade80" text-anchor="middle">&#9650; +${comma(NEW_TOTAL-OLD_TOTAL)} vs last week</text>
 ${rows}
 </svg>`;
 

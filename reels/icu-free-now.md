@@ -71,5 +71,23 @@ few seconds of hands/laptop.
 
 | File | |
 | --- | --- |
+| `reels/icu-free-now.project.json` | the 28s visual-track timeline — 11 clips |
 | `library/svg/icu-growth.svg` | the growth panel — 2,217 → 3,145, Germany gold |
 | `reels/gen-growth.js` | its generator, with both windows' figures |
+
+## The rendered visual track
+
+The 28s track renders **silent, with black where he has to appear** — 2.5–9.0s and
+20.0–24.5s, 11 of 28 seconds. That is not filler: each English caption lands on the
+frame where its Hinglish line is spoken, so the file works as a teleprompter. He
+records the VO straight onto it and films himself over the black.
+
+Row landings in `icu-growth.svg` are timed to the script, not to a fixed grid:
+Germany lands at panel-local 4.00s so it hits *"Germany is new"* at 13.0s, and the
+Norway highlight fires at 7.50s to hit *"Norway is still on the list"* at 16.5s.
+
+A settled panel is the same file seeded at a later `in` point — every animation uses
+`fill-mode: both`, so `in: 6.5` is fully landed with Norway not yet gold, and
+`in: 8.5` has it gold. An earlier attempt generated a second "settled" SVG by
+regex-stripping the animation properties; it silently destroyed the rows and the
+country figures, and was caught in preview.
